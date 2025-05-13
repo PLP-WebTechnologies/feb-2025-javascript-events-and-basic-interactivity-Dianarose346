@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Event Handling & Interactive Elements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Event Handling Section -->
+  <section>
+    <button id="clickBtn">Click Me!</button>
+    <input type="text" id="keypressInput" placeholder="Type something!" />
+    <button id="doubleClickBtn">Double-click Me!</button>
+  </section>
+
+  <!-- Interactive Elements Section -->
+  <section>
+    <button id="changeTextBtn">Click to Change Text!</button>
+    <img id="galleryImage" src="images.jpeg" alt="Gallery Image" width="300" />
+    <button id="nextImageBtn">Next Image</button>
+    <div class="tabs">
+      <button class="tablink" onclick="openTab('Tab1')">Tab 1</button>
+      <button class="tablink" onclick="openTab('Tab2')">Tab 2</button>
+      <div id="Tab1" class="tabcontent">Content for Tab 1</div>
+      <div id="Tab2" class="tabcontent">Content for Tab 2</div>
+    </div>
+  </section>
+
+  <!-- Form Validation Section -->
+  <section>
+    <form id="myForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <button type="submit">Submit</button>
+    </form>
+    <form id="emailForm">
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <button type="submit">Submit</button>
+    </form>
+    <form id="passwordForm">
+      <input type="password" id="password" placeholder="Enter your password" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
